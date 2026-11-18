@@ -1,0 +1,1 @@
+{"platform":"Windows","tests":31,"passed":30,"skipped":1,"skipped_test":"native macOS keychain (covered by macOS CI)","model_requests_sent":0}

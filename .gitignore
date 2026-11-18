@@ -1,0 +1,18 @@
+# Credentials and user data must stay outside this repository.
+.env
+.env.*
+!.env.example
+.gemcli-session*
+.gemcli-cache/
+.gemini-api-cache/
+.cached_cookies*
+*.log
+*.sqlite
+*.db
+.venv/
+runtime/
+__pycache__/
+*.py[cod]
+.DS_Store
+build/
+dist/

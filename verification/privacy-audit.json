@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "files": 56,
+  "configured_secret_matches": 0,
+  "credential_pattern_matches": 0,
+  "personal_paths": 0,
+  "includes_login_cache": false,
+  "includes_windows_runtime_in_git": false
+}

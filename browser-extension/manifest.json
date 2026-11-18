@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini 终端本机登录连接",
+  "version": "1.0.0",
+  "description": "经用户打开本机连接页后，将 Google 登录会话传给本机 Gemini 终端。",
+  "permissions": ["cookies", "storage", "alarms"],
+  "host_permissions": ["https://*.google.com/*", "http://127.0.0.1/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["http://127.0.0.1/*"], "js": ["content.js"], "run_at": "document_idle"}]
+}
