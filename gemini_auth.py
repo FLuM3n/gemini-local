@@ -103,7 +103,7 @@ def save_session(home: Path, cookies: dict[str, str]) -> None:
             _mac_keyring().set_password("GeminiLocal", _keychain_account(home), raw)
             return
         except Exception as error:
-            raise LoginError("无法保存到 macOS 钥匙串，请解锁钥匙串后重新连接。登录信息未写入明文文件。") from error
+            raise LoginError("无法保存到 macOS 钥匙串，请解锁钥匙串后重新连接。未使用明文会话文件替代钥匙串。") from error
     encrypted = protect(raw.encode("utf-8"))
     home.mkdir(parents=True, exist_ok=True)
     fd, name = tempfile.mkstemp(prefix=".gemcli-session-", suffix=".tmp", dir=home)
